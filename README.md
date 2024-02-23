@@ -1,6 +1,11 @@
 
 ## Image Pairing and PDF Generation
-This project provides a Python script for pairing images stored in two different directories, optionally resizing them, and then combining these paired images into a single PDF document. It's particularly useful for visual comparison tasks, such as A/B testing results, before-and-after scenarios, or any situation where side-by-side image comparison is needed.
+This project provides a Python script for pairing images stored in two different directories, optionally resizing them, and then combining these paired images into a single PDF document. It's particularly useful for visual comparison tasks, such as A/B testing results, before-and-after scenarios, or any situation where side-by-side image comparison is needed. Since the original A:B script, I added a number of other cells to expand functionality to provide flexibility for different scenerios. 
+
+#### Other scripts
+
+imag_to_pdf.py & 
+
 
 #### Features
 Pair images from two separate directories based on matching filenames.
@@ -15,12 +20,13 @@ Before running this script, ensure you have Python installed on your system. Thi
 - PIL (Python Imaging Library), also known as Pillow for image processing.
 - PyPDF2
 - reportlab
-- os for directory and file operations.
-- time for tracking the script's execution time.
 
 You can install the required libraries using pip:
 
 ` pip install Pillow ` or `pip3 install Pillow` depending on your Python version and machine.
+
+Can also install via requirements.txt: `pip install -r requirements.txt`
+
 
 #### Usage
 
@@ -33,13 +39,9 @@ You can install the required libraries using pip:
 - Run the Script: Execute the script in your Python environment. The script will pair the images, optionally resize them, and then combine them into a single PDF document.
 3. If you want to add titles and subtitles to your presentations - exectute the following two blocks. Make sure you change the titles content to your desires.
 
-Example command:
-
-` pair_imgs_to_pdf(['path/to/dir1', 'path/to/dir2'], 'output.pdf', target_size=(1000, 1000), special_string='special') `
 
 #### Customization
-You can customize the script to handle different scenarios by modifying the pair_imgs_to_pdf function. For example, you can change the logic for pairing images, adjust the resizing behavior, or modify the PDF generation process to suit your needs.
-
+You can customize the script to handle different scenarios by modifying the pair_imgs_to_pdf function. 
 
 #### Example Code:
 
