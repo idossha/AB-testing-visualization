@@ -4,7 +4,7 @@ This project provides a Python script for pairing images stored in two different
 
 #### Other scripts
 
-imag_to_pdf.py & 
+imgs_to_pdf.py & imgs_to_GIF.py are smaller projects that could come handy. 
 
 
 #### Features
