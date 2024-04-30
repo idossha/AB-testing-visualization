@@ -1,3 +1,8 @@
 
 # Mac OS stuff
 .DS_Store
+
+# Development
+backup
+ShowRoom/ShowRoon
+
